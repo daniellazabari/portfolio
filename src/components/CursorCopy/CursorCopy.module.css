@@ -1,0 +1,30 @@
+.cursor {
+    width: 5vw;
+    height: 5vw;
+    border: 2px solid var(--grey);
+    border-radius: 100%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: black;
+    pointer-events: none;
+    transition: all 150ms ease;
+    transition-property: opacity, background-color, transform, mix-blend-mode;
+    z-index: 9999;
+    mix-blend-mode: difference;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.image_hovered {
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: var(--grey);
+}
+
+.clicked {
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: black;
+}
+
+

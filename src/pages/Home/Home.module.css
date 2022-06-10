@@ -1,0 +1,43 @@
+.title {
+    font-size: 5vw;
+    font-weight: 100;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-transform: uppercase;
+    
+}
+
+.design {
+    float: right;
+    margin-left: -30vw;
+}
+
+.dev {
+    float: right;
+    margin-right: -18vw;
+    margin-bottom: 2.3vw;
+}
+
+.subtitle {
+    font-size: 1.6vw;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    transform: translate(0px);
+    display: block;
+    width: 24vw;
+    float: right;
+    margin-top: -10.2vw;
+    margin-right: 7vw;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.name {
+    border: 2px solid var(--lime);
+    background-color: var(--lime);
+}
