@@ -1,0 +1,151 @@
+
+.card {
+    background-image: url("../../assets/card_with_button.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display: inline-flex;
+    flex-direction: column;
+    width: 34vw;
+    height: 36vw;
+    margin: 2vw;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.project_header {
+    align-items: center;
+}
+
+.project_header tr {
+    display: inline-flex;
+    position: absolute;
+    margin-left: -12.8vw;
+    margin-top: 1vw;
+    padding: 0.2vw 0.5vw;
+}
+
+
+.project_header th {
+    display: block;
+    margin: 0.2vw 0vw;
+    float: center;
+    font-size: 1.1vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 10.5vw;
+    padding: 0.3vw 0vw;
+}
+
+.project_header th:first-child {
+    border-radius: 1vw 0vw 0vw 1vw;
+    border-right: none;
+}
+
+.project_header th:last-child {
+    border-radius: 0vw 1vw 1vw 0vw;
+}
+
+.project_body img {
+    width: 20vw;
+    margin-left: -11.6vw;
+    margin-top: 5vw;
+    border-radius: 0.5vw;
+    position: absolute
+}
+
+.project_description {
+    text-align: left;
+    margin: 0.2vw 2vw;
+    display: block;
+    width: 26vw;
+    text-transform: lowercase;
+}
+
+.project_description h3 {
+    font-weight: 600;
+    font-size: 1.2vw;
+    margin-top: 22vw;
+}
+
+.project_description p {
+    font-size: 1.1vw;
+    margin-top: -0.6vw;
+}
+
+.project_description p:last-child {
+    margin-bottom: 0.9vw;
+}
+
+.project_link {
+    margin: 0.2vw 2vw;
+    display: block;
+    position: absolute;
+}
+
+@media screen and (max-width: 900px) {
+    .project_link {
+        margin-top: 30.8vw;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .project_link {
+        margin-top: 30.7vw;
+    }
+}
+
+.project_link tr {
+    text-align: left;
+    display: inline-flex;
+    position: absolute;
+    width: 29.2vw;
+    height: 4.05vw;
+    margin-left: -1.53vw;
+    margin-top: 0.2vw;
+}
+
+.project_link h3 {
+    font-size: 1.2vw;
+    margin-left: 1vw;
+    width: 9vw;
+}
+
+.project_link th {
+    display: block;
+    align-items: center;
+    width: 5vw;
+}
+
+.project_link th:last-child {
+    position: absolute;
+    margin-left: 23.6vw;
+}
+
+.project_link th img {
+    margin-left: 1.2vw;
+    width: 2.8vw;
+    height: 4vw;
+}
+
+@media screen and (max-width: 900px) {
+    .project_header th {
+        border: 0.9px solid var(--black);
+    }
+
+    .project_body img {
+        border: 1px solid var(--black);
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .project_header th {
+        border: 1.4px solid var(--black);
+    }
+
+    .project_body img {
+        border: 1.5px solid var(--black);
+    }
+
+    
+}

@@ -1,18 +1,22 @@
 import React from 'react'
 import logo from './logo.svg';
-import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
+import { NavHashLink } from 'react-router-hash-link';
 
 
 function Navbar() {
   return (
     <div className={styles.navbar}>
-      <NavLink to='/'>
-        <img src={logo} className="App-logo" alt="logo" />
-      </NavLink>
-      <NavLink to='About'>About</NavLink>
-      <NavLink to='Projects'>Projects</NavLink>
-      <NavLink to='Contact'>Contact</NavLink>
+      <div className={styles.navbar_list}>
+        <a href='#'>
+          <img src={logo} className={styles.logo} alt="logo" />
+        </a>
+        <div className={styles.links}>
+          <NavHashLink className={styles.navbar_item} to='#'>Home</NavHashLink>
+          <NavHashLink className={styles.navbar_item} to='#about'>About</NavHashLink>
+          <NavHashLink className={styles.navbar_item} to='#contact'>Contact</NavHashLink>
+        </div>
+      </div>
     </div>
   )
 }

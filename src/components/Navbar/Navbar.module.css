@@ -1,0 +1,109 @@
+.navbar {
+    border-bottom: 2px solid var(--black);
+    text-align: right;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+    background-image: url("./navbar_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.logo {
+    background-color: transparent;
+}
+
+.navbar_item {
+    color: var(--black);
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 1vw;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        padding-bottom: 4vw;
+    }
+
+    .navbar_list {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+    }
+    
+    .logo {
+        width: 23vw;
+        height: 8vw;
+        margin-top: 0vw;
+        left: 2vw;
+        float: center;
+    }
+
+    .navbar_item {
+        font-size: 1.8vw;
+        font-weight: 500;
+        align-items: center;  
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        float: center;
+        width: 70%;
+        position: absolute;
+        top: 7.6vw;
+    }
+    
+}
+
+@media screen and (min-width: 900px) {
+    .navbar {
+        padding: 0.3vw 0vw;
+    }
+
+    .navbar_list {
+        display: inline-flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        list-style: none;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .logo {
+        width: 15vw;
+        height: 4vw;
+        margin-top: 0vw;
+        left: 2vw;
+        float: center;
+    }
+
+    .navbar_item {
+        font-size: 1.5vw;
+        font-weight: 500;
+        align-items: center;  
+    }
+    
+    .links {
+        display: inline-flex;
+        justify-content: space-between;
+        flex-direction: row;
+        float: right;
+        width: 50%;
+    }
+    
+}
+    
+
+    

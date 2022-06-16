@@ -70,7 +70,7 @@ function CursorCopy() {
     }
 
     const handleImageHoverEvent = () => {
-        document.querySelectorAll("h1").forEach((el) => {
+        document.querySelectorAll("h1, a").forEach((el) => {
             el.addEventListener("mouseover", () => setImageHovered(true));
             el.addEventListener("mouseout", () => setImageHovered(false));
         });

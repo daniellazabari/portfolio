@@ -1,0 +1,69 @@
+.about {
+    font-size: 3vw;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    width: 50vw;
+    float: center;
+    margin-top: 5vw;
+    margin-left: -25vw;
+    position: absolute;
+    text-transform: lowercase;
+    text-align: left;  
+}
+
+
+@media screen and (max-width: 900px) {
+    .about h3 {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 3vw;
+        font-weight: 400;
+        margin-top: 5vw;
+    }
+
+    .my_picture {
+      width: 82vw;
+      height: 87vw;
+      background-image: url("../../assets/picture_mobile.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-top: 20vw;
+      margin-left: 8vw;
+      border-radius: 1vw;
+    }
+    
+  }
+  
+  @media screen and (min-width: 900px) {
+    .my_picture {
+      /* width: 82vw;
+      height: 87vw;
+      background-image: url("./assets/picture_desktop.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-top: 20vw;
+      margin-left: 8vw; */
+      width: 100vw;
+      height: 45vw;
+      background-color: var(--green);
+      border: 3px solid var(--black);
+      margin-top: 15vw;
+      background-image: url("../../assets/picture_desktop.svg");
+      background-size: 50vw;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+
+    .about h3 {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 2vw;
+        font-weight: 400;
+        display: block;
+        width: 44vw;
+        height: 43vw;
+        margin-top: -46.5vw;
+        margin-left: -22vw;
+    }
+    
+  }
