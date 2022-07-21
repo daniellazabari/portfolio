@@ -1,0 +1,24 @@
+.button button {
+    background-color: var(--black);
+    color: var(--green);
+    font-family: 'Work Sans', sans-serif;
+    border: none;
+    border-radius: 10px;
+}
+
+/* .button {
+    margin-bottom: 1vw;
+} */
+
+@media screen and (max-width: 900px) {
+    .button button {
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .button button {
+        width: 80vw;
+        height: 2vw;
+    }
+}

@@ -1,12 +1,9 @@
 .about {
-    font-size: 3vw;
+    font-size: 2vw;
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
-    width: 50vw;
-    float: center;
+    justify-content: center;
     margin-top: 5vw;
-    margin-left: -25vw;
-    position: absolute;
     text-transform: lowercase;
     text-align: left;  
 }
@@ -14,36 +11,31 @@
 
 @media screen and (max-width: 900px) {
     .about h3 {
-        font-family: 'Work Sans', sans-serif;
-        font-size: 3vw;
-        font-weight: 400;
-        margin-top: 5vw;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 2vw;
+      font-weight: 400;
+      margin-top: 5vw;
+      width: 50%;
+      margin-left: 23vw;
+      align-self: center;
     }
 
     .my_picture {
-      width: 82vw;
-      height: 87vw;
+      width: 100%;
+      height: 107vw;
       background-image: url("../../assets/picture_mobile.svg");
       background-size: cover;
-      background-position: center;
+      background-position: center center;
       background-repeat: no-repeat;
       margin-top: 20vw;
-      margin-left: 8vw;
       border-radius: 1vw;
+      justify-content: center;
     }
     
   }
   
   @media screen and (min-width: 900px) {
     .my_picture {
-      /* width: 82vw;
-      height: 87vw;
-      background-image: url("./assets/picture_desktop.svg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin-top: 20vw;
-      margin-left: 8vw; */
       width: 100vw;
       height: 45vw;
       background-color: var(--green);
@@ -63,7 +55,7 @@
         width: 44vw;
         height: 43vw;
         margin-top: -46.5vw;
-        margin-left: -22vw;
+        margin-left: 20px;
     }
     
   }

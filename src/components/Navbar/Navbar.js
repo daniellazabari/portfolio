@@ -13,8 +13,8 @@ function Navbar() {
         </a>
         <div className={styles.links}>
           <NavHashLink className={styles.navbar_item} to='#'>Home</NavHashLink>
-          <NavHashLink className={styles.navbar_item} to='#about'>About</NavHashLink>
-          <NavHashLink className={styles.navbar_item} to='#contact'>Contact</NavHashLink>
+          <NavHashLink className={styles.navbar_item} to='/pages#about'>About</NavHashLink>
+          <NavHashLink className={styles.navbar_item} to='/pages#contact'>Contact</NavHashLink>
         </div>
       </div>
     </div>

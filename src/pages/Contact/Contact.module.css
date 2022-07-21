@@ -1,0 +1,258 @@
+.contact_section h1 {
+    font-size: 4vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.contact_section h3 {
+    font-size: 1.7vw;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin-top: 3vw;
+    margin-left: 7vw;
+    margin-bottom: 3vw;
+    text-align: left;
+}
+
+.contact {
+    background-image: url("../../assets/contact_background.png");
+    background-color: var(--grey);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1.5px solid var(--black);
+    border-bottom: 1.5px solid var(--black);
+}
+
+.contact_section {
+    margin: 5vw 0;
+}
+
+.contact_form {
+    background-color: var(--white);
+    display: inline-table;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1.5px solid var(--black);
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    justify-content: center;
+    position: inherit;
+}
+
+.field label {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 5px;
+    text-transform: lowercase;
+    text-align: left;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 5px 13px;
+}
+
+.field input {
+    width: 100%;
+    height: 3vw;
+    border-radius: 1vw;
+    border: none;
+    padding: 0.5vw 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-transform: lowercase;
+    text-align: left;
+    background-color: transparent;
+}
+
+.field textarea {
+    width: 200%;
+    height: 11vw;
+    border-radius: 1vw;
+    border: none;
+    padding: 1vw 1vw 1vw 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-transform: lowercase;
+    text-align: left;
+    background-color: transparent;
+}
+
+.field input:focus,
+.field textarea:focus {
+    outline: none;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+    color: var(--border);
+}
+
+.name {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+/* 
+.contact_section {
+    margin: 5vw 0;
+    background-image: url("../../assets/contact_background.png");
+    background-color: var(--grey);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    border-top: 1.5px solid var(--black);
+    border-bottom: 1.5px solid var(--black);
+} */
+
+/* .contact_form {
+    background-color: var(--white);
+    align-self: center;
+    display: table;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1.5px solid var(--black);
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+} */
+
+/* .field label {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 5px;
+    text-transform: lowercase;
+    text-align: left;
+} */
+
+/* 
+.field {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 2px 24px;
+} */
+
+/* .field input {
+    width: 100%;
+    height: 3vw;
+    border-radius: 1vw;
+    border: none;
+    padding: 0.5vw 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-transform: lowercase;
+    text-align: left;
+    background-color: transparent;
+} */
+
+/* #email_container {
+    border-bottom: 1.5px solid var(--black);
+} */
+
+/* .field textarea {
+    width: 210%;
+    height: 10vw;
+    border-radius: 1vw;
+    border: none;
+    padding: 1vw 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-transform: lowercase;
+    text-align: left;
+    background-color: transparent;
+} */
+
+/* .field input::placeholder,
+.field textarea::placeholder {
+    color: var(--border);
+} */
+
+/* 
+.name {
+    display: inline-flex;
+    flex-direction: row;
+    border-bottom: var(--black) 1.5px solid;
+} */
+
+@media screen and (max-width: 700px) {
+    .contact_section {
+        width: 100%;
+        height: 260px;
+    }
+
+    .contact_form {
+        width: 100%;
+        height: 165px;
+    }
+
+    .field {
+        width: 25vw;
+    }
+
+    .contact_section h3 {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+    .contact_section {
+        width: 100%;
+        height: 430px;
+    }
+
+    .contact_form {
+        width: 100%;
+        height: 270px;
+    }
+
+    .field {
+        width: 30vw;
+    }
+
+    .contact_section h3 {
+        width: 40vw;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .contact_section {
+        width: 100%;
+        height: 740px;
+    }
+
+    .contact_form {
+        width: 100%;
+    }
+
+    .field {
+        width: 37vw;
+    }
+
+    .contact_section h3 {
+        width: 35vw;
+
+    }
+    
+}

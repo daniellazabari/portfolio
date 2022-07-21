@@ -7,9 +7,9 @@ function Section({ children, className }) {
 
   return (
     <div>
-        <span className={className}>
+        <div className={className}>
             {children}
-        </span>
+        </div>
     </div>
   )
 }

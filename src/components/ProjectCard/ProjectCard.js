@@ -8,9 +8,7 @@ function ProjectCard({ title, description, image, link, chosen }) {
     const designChosen = chosen.includes("design") ? "var(--green)" : "var(--white)";
     const devChosen = chosen.includes("development") ? "var(--green)" : "var(--white)";
     const [img, setImg] = React.useState(image);
-    const createImage = (event) => {
-        setImg(URL.createObjectURL(event.target.files[0]));
-    }
+    
 
   return (
     <div className={styles.card}>
@@ -21,7 +19,7 @@ function ProjectCard({ title, description, image, link, chosen }) {
             </tr>
         </table>
         <div className={styles.project_body}>
-            <img src={img} onLoad={createImage} alt="project" />
+            <img src={img} alt="project" />
         </div>
         <div className={styles.project_description}>
             <h3>{title}</h3>
